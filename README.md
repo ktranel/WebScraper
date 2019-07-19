@@ -2,6 +2,7 @@
 
 ### Installation
 Clone the project:  `git clone https://github.com/ktranel/WebScraper.git`
+`npm install`
 
 ### Requirements
 This project requires instances of both mysql and redis.
