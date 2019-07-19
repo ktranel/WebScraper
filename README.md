@@ -25,4 +25,4 @@ Configuration details located in **config.js**
 - returns json obj with properties: id, jobId, and content
 
 #### example
-`/api?id=75d462f9-4d3-4fce-a218-bbfedb594dd51
+`/api?id=75d462f9-4d3-4fce-a218-bbfedb594dd51`
