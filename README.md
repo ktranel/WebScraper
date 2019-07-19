@@ -1,7 +1,11 @@
 # WebScraper
 
 ### Installation
-Clone the project:  `git clone https://github.com/ktranel/WebScraper.git`
+Clone the project:
+
+`git clone https://github.com/ktranel/WebScraper.git`
+
+
 `npm install`
 
 ### Requirements
