@@ -48,7 +48,8 @@ router.get('/', async (req, res) => {
     };
     const validation = validate({ id }, constraints);
     if (validation) return res.status(400).json({ error: validation });
-    const job = await Scraper.get(id);
+    let job = await Scraper.get(id);
+    if(job.length) job = 'Job not found. The website may still be processing or you may have entered an invalid jobId';
     return res.status(200).json({ result: job });
 });
 

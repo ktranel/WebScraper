@@ -1,5 +1,6 @@
 const redis = require('redis');
-const client = redis.createClient(6379, '127.0.0.1');
+const config = require('../config');
+const client = redis.createClient(config.redis_port, config.redis_host);
 client.get = require('util').promisify(client.get).bind(client);
 
 // Ensure redis connect on startup
