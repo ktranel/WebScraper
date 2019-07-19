@@ -1,26 +1,28 @@
 # WebScraper
 
-###Installation
+### Installation
 Clone the project:  `git clone https://github.com/ktranel/WebScraper.git`
 
-###Requirements
+### Requirements
 This project requires instances of both mysql and redis.
 
 Configuration details located in **config.js**
 
-###Available Routes
+### Available Routes
 `/api`
 - Type: POST
 - Required query parameters: url
 - returns jobId string
 
-####example
+#### example
 `/api?url=http://amazon.com`
+
+--------------------------------------------------------------------------------
 
 `/api`
 - Type: GET
-- Required query parameters: jobId
+- Required query parameters: id
 - returns json obj with properties: id, jobId, and content
 
-####example
-`/api?url=http://amazon.com`
+#### example
+`/api?id=75d462f9-4d3-4fce-a218-bbfedb594dd51`
