@@ -17,6 +17,8 @@ Configuration details located in **config.js**
 #### example
 `/api?url=http://amazon.com`
 
+--------------------------------------------------------------------------------
+
 `/api`
 - Type: GET
 - Required query parameters: jobId
