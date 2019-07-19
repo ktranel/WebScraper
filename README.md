@@ -21,8 +21,8 @@ Configuration details located in **config.js**
 
 `/api`
 - Type: GET
-- Required query parameters: jobId
+- Required query parameters: id
 - returns json obj with properties: id, jobId, and content
 
 #### example
-`/api?url=http://amazon.com`
+`/api?id=75d462f9-4d3-4fce-a218-bbfedb594dd51
