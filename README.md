@@ -8,6 +8,8 @@ Clone the project:
 
 `npm install`
 
+`npm start` or `npm run debug`
+
 ### Requirements
 This project requires instances of both mysql and redis.
 

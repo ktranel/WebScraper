@@ -41,10 +41,13 @@ async function scrape(jobId, url, force){
         ++jobs;
         const content = await axios.get(url)
             .catch(e => console.log(e));
-        if (content.data) {
+        if (!content) {
+            db.addJob(jobId, `WEBSITE ${url} 404 NOT FOUND`);
+        }else if (content.data) {
             cache.setCache(url, content.data);
             db.addJob(jobId, content.data);
         }
+
         --jobs;
     }
 

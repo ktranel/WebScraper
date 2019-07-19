@@ -24,7 +24,6 @@ connection.query(
             console.log(err);
             console.log('Unable to create table. Please manually create table jobs');
         }
-        console.log(result);
     }
     );
 
